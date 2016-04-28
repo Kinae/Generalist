@@ -300,15 +300,15 @@ function Generalist:PopulateCharList()
 	self:UpdateCurrentCharacter()
 	
 	-- Get the current character's faction
-	local factID = GameLib.GetPlayerUnit():GetFaction()
+	--local factID = GameLib.GetPlayerUnit():GetFaction()
 	
 	-- Build list of characters of this faction
 	local a = {}
     	for name in pairs(self.altData) do
 		-- Only add characters of this faction to the list
-		if self.altData[name].faction == factID then
+		--if self.altData[name].faction == factID then
 			table.insert(a, name)
-		end
+		--end
 	end
 	
 	-- Sort the list (alphabetically)
@@ -1530,15 +1530,15 @@ function Generalist:GeneralistSearchSubmitted( wndHandler, wndControl, eMouseBut
 	resList:DestroyChildren()
 	
 	-- Get the current character's faction
-	local factID = GameLib.GetPlayerUnit():GetFaction()
+	--local factID = GameLib.GetPlayerUnit():GetFaction()
 	
 	-- Build list of characters of this faction
 	local a = {}
     for name in pairs(self.altData) do
 		-- Only add characters of this faction to the list
-		if self.altData[name].faction == factID then
+		--if self.altData[name].faction == factID then
 			table.insert(a, name)
-		end
+		--end
 	end
 	
 	-- Sort the list to make results a little saner to read.
@@ -1634,15 +1634,15 @@ function Generalist:AddTooltipInfo(wndParent, wndTooltip, item)
 		
 	-- Now we loop through everyone's inventory to find matches.	
 	-- Get the current character's faction
-	local factID = GameLib.GetPlayerUnit():GetFaction()
+	--local factID = GameLib.GetPlayerUnit():GetFaction()
 	
 	-- Build list of characters of this faction
 	local a = {}
     for name in pairs(self.altData) do
 		-- Only add characters of this faction to the list
-		if self.altData[name].faction == factID then
+		--if self.altData[name].faction == factID then
 			table.insert(a, name)
-		end
+		--end
 	end
 	
 	-- Sort the list to make results a little saner to read.
